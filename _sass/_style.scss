@@ -1,8 +1,6 @@
-/*
- * Body resets
- *
- * Update the foundational and global aspects of the page.
- */
+// Body resets
+//
+// Update the foundational and global aspects of the page.
 
 @import "variables";
 @import "buttons";
@@ -16,7 +14,7 @@
 .f5 { font-size: 1.25rem; }
 .fw-500 { font-weight: 500; }
 
-/* Pygments via Jekyll */
+// Pygments via Jekyll
 .highlight {
   margin: 0 0 1rem;
   border-radius: .25rem;
@@ -26,7 +24,7 @@
 }
 
 
-/* Quotes */
+// Quotes
 blockquote {
   padding: .5rem 1rem;
   margin: .8rem 0;
@@ -50,7 +48,7 @@ img {
   border-radius: 5px;
 }
 
-/* Tables */
+// Tables
 table {
   margin-bottom: 1rem;
   width: 100%;
@@ -68,11 +66,9 @@ tbody tr:nth-child(odd) th {
 }
 
 
-/*
- * Container
- *
- * Center the page content.
- */
+// Container
+//
+// Center the page content.
 
 .posts-container {
   max-width: 760px;
@@ -83,19 +79,17 @@ tbody tr:nth-child(odd) th {
 }
 
 
-/*
- * Posts and pages
- *
- * Each post is wrapped in `.post` and is used on default and post layouts. Each
- * page is wrapped in `.page` and is only used on the page layout.
- */
+// Posts and pages
+//
+// Each post is wrapped in `.post` and is used on default and post layouts. Each
+// page is wrapped in `.page` and is only used on the page layout.
 
 .page,
 .post {
   margin-bottom: 4em;
 }
 
-/* Blog post or page title */
+// Blog post or page title
 .page-title,
 .post-title,
 .post-title a {
@@ -106,7 +100,7 @@ tbody tr:nth-child(odd) th {
   margin-top: 0;
 }
 
-/* Meta data line below post title */
+// Meta data line below post title
 .post-date {
   display: block;
   margin-top: -.5rem;
@@ -114,12 +108,12 @@ tbody tr:nth-child(odd) th {
   color: #767676;
 }
 
-/* Break long links */
+// Break long links
 .post a {
   word-break: break-word;
 }
 
-/* Related posts */
+// Related posts
 .related {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -144,12 +138,10 @@ tbody tr:nth-child(odd) th {
   color: inherit;
 }
 
-/* Special case the opening paragraph */
+// Special case the opening paragraph
 .post > p:first-of-type {
   font-size: 130%;
   color: $gray-700;
-  // font-weight: 300;
-  // color: #222;
 }
 
 .post .embed-responsive {
@@ -157,22 +149,20 @@ tbody tr:nth-child(odd) th {
 }
 
 
-/*
- * Pagination
- *
- * Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
- * there are no more previous or next posts to show.
- */
+// Pagination
+//
+// Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
+// there are no more previous or next posts to show.
 
 .pagination {
-  overflow: hidden; /* clearfix */
+  overflow: hidden; // clearfix
   margin-left: -1rem;
   margin-right: -1rem;
   color: #767676;
   text-align: center;
 }
 
-/* Pagination items can be `span`s or `a`s */
+// Pagination items can be `span`s or `a`s
 .pagination-item {
   position: relative;
   display: block;
@@ -183,7 +173,7 @@ tbody tr:nth-child(odd) th {
   margin-bottom: -1px;
 }
 
-/* Only provide a hover state for linked pagination items */
+// Only provide a hover state for linked pagination items
 a.pagination-item:hover {
   z-index: 2;
   color: #fff;
@@ -222,22 +212,24 @@ a.pagination-item:hover {
   .no-js & {
     display: none;
   }
-}
-.embed-responsive .embed-responsive-item,
-.embed-responsive iframe,
-.embed-responsive embed,
-.embed-responsive object,
-.embed-responsive video {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-.embed-responsive.embed-responsive-16by9 {
-  padding-bottom: 56.25%;
+
+  .embed-responsive-item,
+  iframe,
+  embed,
+  object,
+  video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  &.embed-responsive-16by9 {
+    padding-bottom: 56.25%;
+  }
 }
 
 iframe[data-url^="https://jsbin.com"] {

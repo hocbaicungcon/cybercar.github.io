@@ -1,17 +1,6 @@
-/* Resets
--------------------------------------------------- */
-
-// iframe {
-//   border: 0;
-// }
 //
-// h1, h2, h3, h4, h5, h6 {
-//   font-weight: 400;
-// }
+// Resets
 //
-// h2, h3, h4 {
-//   font-weight: 500;
-// }
 
 .embed-responsive {
   background-color: #000;
@@ -26,25 +15,14 @@
   margin-bottom: .25rem;
 }
 
-/* Bootstrap "B" icon */
-// .bs-docs-booticon {
-//   display: inline-block;
-//
-//   svg {
-//     margin-bottom: 1rem;
-//   }
-//
-//   &:hover,
-//   &:focus {
-//     text-decoration: none;
-//   }
-// }
 
-/* Header */
+//
+// Header
+//
+
 .masthead {
   position: relative;
   padding: 2rem 1.25rem;
-  // margin-bottom: 1.25rem;
   font-weight: 300;
   color: #cdbfe3;
   text-align: center;
@@ -72,8 +50,9 @@
 }
 
 
-/* Download buttons
--------------------------------------------------- */
+//
+// Download buttons
+//
 
 .btn-link {
   display: inline-block;
@@ -84,23 +63,26 @@
   background-color: #08c;
   border-radius: .2rem;
   transition: all .2s linear;
-}
-.btn-link:hover {
-  color: #fff;
-  text-decoration: none;
-  background-color: #005580;
+
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #005580;
+  }
 }
 
 .btn-link-ratchet {
   background-color: #b60c32;
-}
-.btn-link-ratchet:hover {
-  background-color: #0f1953;
+
+  &:hover {
+    background-color: #0f1953;
+  }
 }
 
 
-/* List page
--------------------------------------------------- */
+//
+// List page
+//
 .list {
   padding-left: 0;
   list-style: none;
