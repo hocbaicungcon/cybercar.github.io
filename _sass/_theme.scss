@@ -27,7 +27,7 @@
   color: #cdbfe3;
   text-align: center;
   text-shadow: 0 1px 0 rgba(0,0,0,.1);
-  background-image: linear-gradient(#563d7c, #6f5499);
+  background-image: linear-gradient(darken($bd-purple-bright, 10%), $bd-purple-bright);
 
   @media (min-width: 40em) {
     padding: 3rem 0 4rem;
